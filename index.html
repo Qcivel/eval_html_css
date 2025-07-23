@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Student</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Digital Student</div>
+
+        <nav>
+            <a href="#intro">Intro </a>
+            <a href="#apprendre">Apprendre</a>
+            <a href="#balise">Les bases</a>
+            <a href="#tip">Tips</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+
+    <section class="intro">
+        <h1 id="intro">Introduction</h1>
+        <p>Nous allons voir dans ce guide pourquoi apprendre le HTML & CSS et comment utiliser les principes de bases.</p>
+        <img src="assets/image/intro.webp" alt="web développement">
+    </section>
+
+    <section class="learn">
+        <h2 id="apprendre">Pourquoi apprendre le HTML&CSS aujourd'hui ?</h2>
+            <div class="learn-grid">
+            <div class="learn-card">
+                <img src="assets/image/développeur.webp" alt="développeur"/>
+                <h3>Métier du web</h3>
+                <p>Travailler dans les métier du web.</p>
+            </div>
+            <div class="learn-card">
+                <img src="assets/image/création.webp" alt="Création"/>
+                <h3>Création</h3>
+                <p>Créer son propre site internet de A à Z.</p>
+            </div>
+            <div class="learn-card">
+                <img src="assets/image/curiosité.webp" alt="Curiosité"/>
+                <h3>Curiosité</h3>
+                <p>Comprendre le fonctionnement du web.</p>
+            </div>
+            <div class="learn-card">
+                <img src="assets/image/Apprendre.webp" alt="Apprentisage"/>
+                <h3>Apprentisage</h3>
+                <p>Apprendre de nouvelles choses.</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="learn">
+
+        <h2 id="balise"> le HTML c'est quoi ?</h2>
+        <p>HTML (HyperText Markup Language) n'est pas un langage de programmation : c'est un langage de balisage qui sert à indiquer au navigateur comment structurer les pages web visitées. Il peut être aussi compliqué ou aussi simple que le développeur web souhaite qu'il soit. Le HTML se compose d'une série d'éléments avec lesquels vous pouvez encadrer, envelopper ou baliser différentes parties du contenu pour les faire apparaître ou agir d'une certaine manière. Des balises encadrantes peuvent transformer une petite partie de contenu en un lien vers une autre page sur le Web, mettre des mots en italique, etc.</p>
+        <h2>Les balises</h2>
+        
+            <p>Le HTML utilise des balises ouvrante et fermante &lt;&gt; pour que le navigateur puisse identifier l'élement. </p>
+            <br>
+            <h3>Balise</h3>
+            
+                <ul class="learn-balise">
+                    <ul id="item1">
+                        <li>Les balises:</li>
+                    </ul>
+                    <ol>
+                    <li> <pre><code>&lt;h1&gt;</code></pre> la balise h1 permet de faire un titre</li>
+                    <li> <pre><code>&lt;p&gt;</code></pre> la balise p permet de faire un paragraphe</li>
+                    <li> <pre><code>&lt;img&gt;</code></pre> la balise img permet d'inserer une image</li>
+                    </ol>
+                </ul>
+                <ul class="learn-balise">
+                    <ul id="item2">
+                        <li>Les sélecteurs en css:</li>
+                    </ul>
+                    <ol>
+                    <li> <pre><code>&lt;class="..."&gt;</code></pre> La classe CSS est un attribut qui permet de sélectionner plusieurs éléments HTML et de définir leur style simultanément.</li>
+                    <li><pre><code>&lt;id="..."&gt;</code></pre> définit un identifiant qui doit être unique pour l'ensemble du document</li>
+                    
+                    </ol>
+                </ul>
+                <br>
+                <h3>Exemple de balise</h3>
+
+                <ul class="learn-balise">
+                    <ul >
+                        <li>Ecrire un titre</li>
+                        <li>Ecrire un paragraphe</li>
+                        <li>Insérer une image en html</li>
+                    </ul>
+                    <ol>
+                    <li><code> &lt;h1&gt; Je suis un titre &lt;/h1&gt;</li></code>
+                    <li><code> &lt;p&gt; Je suis un paragraphe &lt;/p&gt;</li></code>
+                    
+                        <ul>
+                            <li><code> &lt;img src="URL de l'image" alt=" description textuelle que l’on attribue à une image."&gt;</code></li>
+                        </ul>
+                </ul>
+                <br>
+                <h3>Les balises CSS</h3>
+                <ul class="learn-balise">
+                    <ul >
+                        <li>modifier une couleur </li>
+                        <li>modifier la taille d'un texte</li>
+                        <li>Ajouter une bordure</li>
+                    </ul>
+                    <ol>
+                    <li><code> p {color: red}</li></code>
+                    <li><code> p {font-size:1.1em}</li></code>
+                    <li><code> p {border: solide 1px}</li></code>
+                    </ol>
+                        
+                </ul>
+    </section>
+
+    <section class="tips">
+        <h2 id="tip">Tips & bonnes pratiques</h2>
+            <p>il est important que la lecture du code soit claire et structurée, pour cela on dispose les éléments comme ci dessous:</p>
+        <br>  
+        <code>
+            <pre>&lt;ul class="nav-links"&gt;</pre>
+                <pre>&lt;li&gt;Fonctionnalités&lt;/li&gt;</pre>
+                <pre>&lt;li&gt;Fonctionnalités&lt;/li&gt;</pre>
+           <pre> &lt;/ul&gt;</pre>
+    </code>
+    </section>
+
+    
+    <section class="contact">
+        <h2 id="contact">Formulaire de contact</h2>
+            <p>Pour des questions techniques contacter nous en remplissent le formulaire ci-dessous.</p>
+        <form class="formulaire">
+            <label for="nom">Nom :</label>
+            <input class="inputshape" type="text" id="nom" name="nom" autofocus="nom" required >
+            <label for="email">Email :</label>
+            <input class="inputshape" type="email" id="email" name="email" required>
+            <br>
+            <label for="information"></label>
+            <textarea class="inputshape" id="information" name="information" rows="4"cols="50" placeholder="Informations complémentaires que vous souhaitez nous tranmettre."></textarea>
+            <br>
+            <input type="checkbox" id="scales" name="scales" checked required >
+            <label for="scales">Accepter les conditions d'utilisations</label>
+            <button type="submit">Envoyer</button>
+        </form>
+
+
+    </section>
+
+    <footer>
+       <p> &copy; 2025 Digital Student - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
